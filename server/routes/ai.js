@@ -3,11 +3,13 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import auth from "../middleware/auth.js";
 import Topic from "../models/Topic.js";
 import Session from "../models/Session.js";
-
+import dotenv from "dotenv"
+dotenv.config();
 const router = express.Router();
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY ?? "AIzaSyBLomejotLzKZWp_2yXA2KcvpVy-vK9oJc");
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
+console.log("API Key" + process.env.GEMINI_API_KEY)
 
 // =============================
 // 1️⃣ AI FEEDBACK ROUTE
