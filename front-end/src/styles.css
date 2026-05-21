@@ -1,0 +1,85 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Layout Wrapper */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #111827;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+/* Content Area */
+.main-content {
+  margin-left: 250px;   /* Important: prevents overlap */
+  padding: 30px;
+  width: 100%;
+}
+
+/* Page Card Style */
+.page-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button.primary {
+  background: #2563eb;
+  color: white;
+}
+
+button.primary:hover {
+  background: #1d4ed8;
+}
+
+button.danger {
+  background: #dc2626;
+  color: white;
+}
+
+/* Inputs */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
